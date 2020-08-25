@@ -1,8 +1,8 @@
 
 <h1> Log in </h1>
 <%= flash.now[:notice] if flash[:notice]%>
-<%form_with url: sessions_path%>
-  <%= form_with model: @user, local: true do |f| %>
+
+  <%= form_with model: @user, url:sessions_path, local: true do |f| %>
 
     <div class="field">
       <%= label_tag :email %>
